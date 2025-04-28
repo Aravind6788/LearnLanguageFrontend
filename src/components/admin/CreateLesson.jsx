@@ -142,14 +142,14 @@ const CreateLesson = () => {
             <span className="nav-icon">📊</span>
             <span>Dashboard</span>
           </Link>
-          <Link to="/admin/languages" className="nav-item">
+          <Link to="/admin/languages" className="nav-item active">
             <span className="nav-icon">🌎</span>
             <span>Languages</span>
           </Link>
-          <Link to="/admin/lessons" className="nav-item active">
+          {/* <Link to="/admin/lessons" className="nav-item active">
             <span className="nav-icon">📚</span>
             <span>Lessons</span>
-          </Link>
+          </Link> */}
           <Link to="/admin/users" className="nav-item">
             <span className="nav-icon">👥</span>
             <span>Users</span>
@@ -166,12 +166,12 @@ const CreateLesson = () => {
       <div className="admin-content">
         <div className="content-header">
           <h2>Create New Lesson</h2>
-          <Link 
+          {/* <Link 
             to={languageId ? `/admin/languages/${languageId}/lessons` : "/admin/lessons"} 
             className="secondary-button"
           >
             Back to Lessons
-          </Link>
+          </Link> */}
         </div>
         
         <div className="form-card">

@@ -48,6 +48,10 @@ const LanguagesPage = () => {
             <span className="nav-icon">👥</span>
             <span>Lessons</span>
           </Link>
+          <Link to="/chatbot" className="nav-item text-white d-block mb-3">
+            <span className="nav-icon">🤖</span>
+            <span> Chat Bot</span>
+          </Link>
         </nav>
         <div className="logout-section">
           <button className="logout-button" onClick={handleLogout}>

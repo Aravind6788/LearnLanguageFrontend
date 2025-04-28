@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const API_KEY = "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";
 
@@ -130,7 +131,9 @@ function ChatBot() {
             {levels.map(level => (
               <option key={level} value={level}>{level}</option>
             ))}
+            
           </select>
+                      <Link to="/learner/dashboard">
           <button style={{
             backgroundColor: "#3498db",
             color: "white",
@@ -141,6 +144,7 @@ function ChatBot() {
           }}>
             My Profile
           </button>
+          </Link>
         </div>
       </nav>
 
