@@ -16,10 +16,10 @@ const LearnerLessons = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const lessonsResponse = await axios.get(`http://localhost:5000/api/languages/${languageId}/lessons`);
+        const lessonsResponse = await axios.get(`https://learnlanguage-9gzy.onrender.com/api/languages/${languageId}/lessons`);
         setLessons(lessonsResponse.data);
 
-        const languageResponse = await axios.get(`http://localhost:5000/api/languages/${languageId}`);
+        const languageResponse = await axios.get(`https://learnlanguage-9gzy.onrender.com/api/languages/${languageId}`);
         setLanguage(languageResponse.data);
 
         setLoading(false);
@@ -61,7 +61,7 @@ const LearnerLessons = () => {
         // Update user progress to add the language
         await axios({
           method: 'POST',
-          url: `http://localhost:5000/api/updates/${userId}/add-language`,
+          url: `https://learnlanguage-9gzy.onrender.com/api/updates/${userId}/add-language`,
           data: { languageId },
           headers: {
             'Content-Type': 'application/json',

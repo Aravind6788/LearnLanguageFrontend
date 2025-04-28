@@ -13,7 +13,7 @@ const LanguagesPage = () => {
   useEffect(() => {
     const fetchLanguages = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/languages');
+        const response = await axios.get('https://learnlanguage-9gzy.onrender.com/api/languages');
         setLanguages(response.data);
         setLoading(false);
       } catch (err) {

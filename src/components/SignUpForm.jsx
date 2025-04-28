@@ -21,7 +21,7 @@ const SignUpForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/auth/register", formData);
+      await axios.post("https://learnlanguage-9gzy.onrender.com/api/auth/register", formData);
       navigate("/login");
     } catch (error) {
       setMessage(error.response?.data?.message || "Registration failed");

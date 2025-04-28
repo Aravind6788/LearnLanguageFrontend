@@ -5,7 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://learnlanguage-9gzy.onrender.com/api";
 
 export default function LearnerDashboard() {
   const [stats, setStats] = useState({

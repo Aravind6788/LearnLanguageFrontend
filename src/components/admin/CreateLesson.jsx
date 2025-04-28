@@ -48,7 +48,7 @@ const CreateLesson = () => {
     if (!languageId) {
       const fetchLanguages = async () => {
         try {
-          const res = await axios.get("http://localhost:5000/api/languages", {
+          const res = await axios.get("https://learnlanguage-9gzy.onrender.com/api/languages", {
             headers: { Authorization: `Bearer ${token}` },
           });
           setLanguages(res.data);
@@ -109,7 +109,7 @@ const CreateLesson = () => {
     
     try {
       await axios.post(
-        "http://localhost:5000/api/lessons",
+        "https://learnlanguage-9gzy.onrender.com/api/lessons",
         formData,
         {
           headers: {

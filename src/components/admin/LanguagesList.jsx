@@ -29,7 +29,7 @@ const LanguagesList = () => {
     const fetchLanguages = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("http://localhost:5000/api/languages", {
+        const res = await axios.get("https://learnlanguage-9gzy.onrender.com/api/languages", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setLanguages(res.data);

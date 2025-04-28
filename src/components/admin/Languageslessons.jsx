@@ -33,13 +33,13 @@ const LanguageLessons = () => {
         setLoading(true);
         
         // First, fetch language info to display the language name
-        // const languageRes = await axios.get(`http://localhost:5000/api/languages/${id}`, {
+        // const languageRes = await axios.get(`https://learnlanguage-9gzy.onrender.com/api/languages/${id}`, {
         //   headers: { Authorization: `Bearer ${token}` },
         // });
         // setLanguage(languageRes.data);
 
         // Then fetch lessons for this language
-        const lessonsRes = await axios.get(`http://localhost:5000/api/languages/${id}/lessons`, {
+        const lessonsRes = await axios.get(`https://learnlanguage-9gzy.onrender.com/api/languages/${id}/lessons`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setLessons(lessonsRes.data);

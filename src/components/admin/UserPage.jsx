@@ -17,7 +17,7 @@ const UsersPage = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/getAllUsers');
+        const response = await axios.get('https://learnlanguage-9gzy.onrender.com/api/auth/getAllUsers');
         setUsers(response.data);
         setLoading(false);
       } catch (err) {

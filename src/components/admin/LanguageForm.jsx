@@ -36,7 +36,7 @@ const LanguageForm = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/api/languages",
+        "https://learnlanguage-9gzy.onrender.com/api/languages",
         formData,
         {
           headers: {

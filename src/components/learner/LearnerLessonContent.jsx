@@ -59,7 +59,7 @@ const LearnerLessonsContent = () => {
 
         setUserId(currentUserId);
 
-        const response = await axios.get(`http://localhost:5000/api/lessons/${lessonId}`, {
+        const response = await axios.get(`https://learnlanguage-9gzy.onrender.com/api/lessons/${lessonId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -131,7 +131,7 @@ const LearnerLessonsContent = () => {
 
       // Update single content mark
       await axios.put(
-        `http://localhost:5000/api/lessons/${lessonId}/content/${currentContentIndex}`,
+        `https://learnlanguage-9gzy.onrender.com/api/lessons/${lessonId}/content/${currentContentIndex}`,
         { marks: score },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -149,7 +149,7 @@ const LearnerLessonsContent = () => {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/api/lessons/${lessonId}/user-mark`,
+          `https://learnlanguage-9gzy.onrender.com/api/lessons/${lessonId}/user-mark`,
           userMarkPayload,
           { headers: { Authorization: `Bearer ${token}` } }
         );

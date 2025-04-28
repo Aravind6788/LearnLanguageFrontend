@@ -34,8 +34,8 @@ const Dashboard = () => {
         
         // Fetch all data concurrently
         const [languagesRes, usersRes] = await Promise.all([
-          axios.get('http://localhost:5000/api/languages'),
-          axios.get('http://localhost:5000/api/auth/getAllUsers', authHeader)
+          axios.get('https://learnlanguage-9gzy.onrender.com/api/languages'),
+          axios.get('https://learnlanguage-9gzy.onrender.com/api/auth/getAllUsers', authHeader)
         ]);
         
         // Calculate total lessons from all languages
@@ -43,7 +43,7 @@ const Dashboard = () => {
         
         // For each language, fetch its lessons
         const lessonPromises = languagesRes.data.map(language => 
-          axios.get(`http://localhost:5000/api/languages/${language._id}/lessons`)
+          axios.get(`https://learnlanguage-9gzy.onrender.com/api/languages/${language._id}/lessons`)
         );
         
         const lessonResults = await Promise.all(lessonPromises);

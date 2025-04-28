@@ -18,7 +18,7 @@ const LessonPage = () => {
   useEffect(() => {
     const fetchLessons = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/languages/6809e51159c06822fa4b43b8/lessons');
+        const response = await axios.get('https://learnlanguage-9gzy.onrender.com/api/languages/6809e51159c06822fa4b43b8/lessons');
         const lessons = response.data;
 
         // Find the lesson that matches the ID from the URL
