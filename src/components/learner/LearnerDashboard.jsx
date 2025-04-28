@@ -57,9 +57,11 @@ export default function LearnerDashboard() {
       if (!selectedLanguage) return;
       try {
         setLoading(true);
-        const token = localStorage.getItem('authToken');
+        const token = localStorage.getItem('token'); // Use consistent token key
+        
+        // This URL should match your backend route exactly
         const response = await axios.get(
-          `http://localhost:5000/api/users/dashboard/language/${selectedLanguage.id}`, 
+          `${API_BASE_URL}/users/language-progress/${selectedLanguage.id}`, 
           { headers: { Authorization: `Bearer ${token}` } }
         );
         
@@ -70,12 +72,12 @@ export default function LearnerDashboard() {
           completed: category.completed,
           remaining: category.total - category.completed
         }));
-
+    
         const pieData = progressByCategory.map(category => ({
           name: category.category,
           value: category.completed
         }));
-
+    
         setLanguageProgress({ barData, pieData });
       } catch (err) {
         console.error('Error fetching language progress:', err);

@@ -17,6 +17,7 @@ import LearnerLessons from './components/learner/LearnerLessons.jsx';
 import LearnerLessonContent from './components/learner/LearnerLessonContent.jsx';
 
 import LearnerDashboard from './components/learner/LearnerDashboard.jsx';
+import ChatBot from './components/ChatBot.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/register" element={<SignUpForm />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/chatbot" element={<ChatBot />} />
         <Route path="/admin/create-language" element={<LanguageForm/>} />   
         <Route path="/admin/languages" element={<LanguagesList/>} />       
         <Route path="/admin/languages/:id/lessons" element={<LanguageLessons />} />
