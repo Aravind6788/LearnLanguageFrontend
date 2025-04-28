@@ -1,0 +1,212 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+    padding-left:250px
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  /* Stat Card */
+  .stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stat-card .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+  }
+  
+  .stat-card .card-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  .stat-card .card-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  /* Language Buttons */
+  .language-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: #4b5563;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .language-btn:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .language-btn.selected {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  /* Progress Bars & Pie Charts */
+  .chart-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container .chart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-container h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .chart-container .progress {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .chart-container .progress .completed {
+    color: #4ade80;
+  }
+  
+  .chart-container .progress .remaining {
+    color: #d1d5db;
+  }
+  
+  /* Recent Activity */
+  .activity-item {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .activity-item:last-child {
+    border-bottom: none;
+  }
+  
+  .activity-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+  }
+  
+  .activity-item .activity-text {
+    flex-grow: 1;
+  }
+  
+  .activity-item .activity-title {
+    font-weight: 500;
+    color: #1f2937;
+  }
+  
+  .activity-item .activity-date {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .activity-item .activity-description {
+    color: #4b5563;
+    font-size: 0.875rem;
+  }
+  
+  /* Recommended Lessons */
+  .recommended-lesson {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .recommended-lesson:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommended-lesson .lesson-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .recommended-lesson .lesson-header .language-tag {
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #e0f7fa;
+    color: #0097a7;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+  }
+  
+  .recommended-lesson .lesson-header .lesson-duration {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .recommended-lesson .lesson-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #1f2937;
+  }
+  
+  .recommended-lesson .lesson-description {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .recommended-lesson .start-lesson-btn {
+    font-size: 0.875rem;
+    color: #3b82f6;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

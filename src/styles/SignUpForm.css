@@ -1,0 +1,140 @@
+/* SignUpForm.css */
+:root {
+    --primary-color: #38B2AC;
+    --primary-dark: #2C9D98;
+    --secondary-color: #4FD1C5;
+    --accent-color: #F6AD55;
+    --error-color: #E53E3E;
+    --success-color: #48BB78;
+    --dark-text: #2D3748;
+    --light-bg: #F7FAFC;
+    --border-color: #E2E8F0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Auth Container - Centers the form vertically and horizontally */
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    padding: 20px;
+  }
+  
+  /* Card that contains the form */
+  .auth-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    width: 100%;
+    max-width: 450px;
+    padding: 32px;
+  }
+  
+  /* Form title and subtitle */
+  .auth-form h2 {
+    color: var(--dark-text);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    text-align: center;
+  }
+  
+  .form-subtitle {
+    color: #718096;
+    font-size: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  /* Form layout and styling */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  /* Input fields styling */
+  .auth-form input,
+  .auth-form select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: white;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .auth-form input:focus,
+  .auth-form select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.2);
+  }
+  
+  /* Button styling */
+  .primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+  }
+  
+  .primary-button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  /* Error message styling */
+  .message {
+    margin-top: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .error-message {
+    background-color: rgba(229, 62, 62, 0.1);
+    color: var(--error-color);
+    border: 1px solid rgba(229, 62, 62, 0.3);
+  }
+  
+  /* Login redirect link styling */
+  .auth-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  
+  .redirect-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .redirect-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
